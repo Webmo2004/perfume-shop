@@ -1,0 +1,117 @@
+body{
+    background-color: rgba(242, 223, 200, 0.482);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+
+.container{
+    width: 650px;
+    height: 500px;
+    border-radius: 10px;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container .product{
+    width: 320px;
+    height: 500px;
+    background-image: url(IMG/image-product-desktop.jpg);
+    background-size: cover;
+}
+
+.container .info{
+    width: 280px;
+    height: 450px;
+}
+
+.info h3{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 1;
+    color: rgb(87, 90, 92);
+}
+
+.info p:nth-child(2){
+    font-size: 35px;
+    line-height: 35px;
+    color: rgb(9, 62, 9);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.info p:nth-child(3){
+    color: rgba(71, 74, 76, 0.926);
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 25px;
+    height: 120px;
+}
+
+.cost{
+    width: 300px;
+    height: 50px;
+    line-height: 30px;
+    display: flex;
+}
+
+.cost span:nth-child(1){
+    font-size: 35px;
+    color: rgb(14, 128, 14) ;
+    font-weight: bold;
+}
+
+.cost span:nth-child(2){
+    transform: translatex(20px);
+    color: rgba(85, 88, 91, 0.847);
+}
+
+button{
+    width: 250px;
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(0, 128, 0, 0.804);
+}
+
+button span:nth-child(2){
+    color: white;
+    font-size: 16px;
+    transform: translateY(0px);
+    margin-left: 10px;
+}
+
+@media (max-width:430px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        height: 750px;
+    }
+    .container .product{
+        width: 100%;
+        height: 300px;
+        background-position:center;
+    }
+    .container .info{
+        padding: 20px;
+    }
+    .container .info p:nth-child(2){
+        width: 350px;
+    }
+    .container .info p:nth-child(3){
+        width: 350px;
+        font-size: 16px;
+    }
+    button{
+        width: 350px;
+        background-color: rgba(3, 114, 3, 0.8);
+    }
+}
